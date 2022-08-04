@@ -11,16 +11,17 @@ const MenuBar = () => {
           <img src={Logo} alt="logo" />
         </Link>
         <nav>
-          <NavLink exact="true" activeclassname="active" to="/">
+          <NavLink exact="true" activeclassname="activeHome" to="/">
             Home
           </NavLink>
-          <NavLink exact="true" activeclassname="active" to="/about">
+          <NavLink exact="true" activeclassname="activeAbout" to="/about">
             About
           </NavLink>
-          <NavLink exact="true" activeclassname="active" to="/timeline">
+          <NavLink exact="true" activeclassname="activeTimeline" to="/timeline">
             Timeline
           </NavLink>
         </nav>
+        {/* <div className="underline"></div> */}
       </div>
       <Outlet />
     </>

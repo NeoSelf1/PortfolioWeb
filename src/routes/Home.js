@@ -1,7 +1,8 @@
 import React from 'react'
+import MainVanner from '../components/MainVanner'
 
 const Home = () => {
-  return <div>Home</div>
+  return <MainVanner />
 }
 
 export default Home
