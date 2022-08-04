@@ -1,8 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss'
+import { Routes, Route } from 'react-router-dom'
+import Home from './routes/Home'
+import MenuBar from './components/MenuBar'
 
 function App() {
-  return <div className='App'>hi</div>;
+  return (
+    <>
+      <Routes>
+        <Route path="/" element={<MenuBar />}>
+          <Route index element={<Home />} />
+        </Route>
+      </Routes>
+    </>
+  )
 }
 
-export default App;
+export default App
