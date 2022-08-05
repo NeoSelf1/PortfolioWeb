@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import useInterval from './useInterval'
 import AnimatedLetters from './AnimatedLetters'
 import Main from '../assets/images/main.png'
+import logo from '../assets/images/logo.png'
 const MainVanner = () => {
   const [count, setCount] = useState(0)
   //prettier-ignore
@@ -35,7 +36,7 @@ const MainVanner = () => {
             idx={count == 0 ? 20 : 1}
           />
           <h3>새로운 것을 찾는 것을 두려워하지 않는 탐험가</h3>
-          <Link to="/contact" className="flat-button">
+          <Link to="/about" className="flat-button">
             +
           </Link>
         </div>
@@ -45,7 +46,32 @@ const MainVanner = () => {
       <div className="img">
         <img src={Main} alt="main" />
       </div>
-      <div className="content-right"></div>
+      <div className="content-right">
+        <h3>
+          There's nothing uglier <br /> than regret
+        </h3>
+        <ul>
+          <li>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/NeoSelf1"
+            >
+              <img src={logo} alt="github" />
+            </a>
+          </li>
+          <li>
+            <a target="_blank" rel="noreferrer" href="www.naver.com">
+              <img src={logo} alt="github" />
+            </a>
+          </li>
+          <li>
+            <a target="_blank" rel="noreferrer" href="www.naver.com">
+              <img src={logo} alt="github" />
+            </a>
+          </li>
+        </ul>
+      </div>
     </>
   )
 }

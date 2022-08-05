@@ -47,8 +47,9 @@
   border: 1px solid #cfcfcf;
   position: absolute;
   //   width: 1px;
-  height: 100%;
+  height: 85%;
   left: 50%;
+  //   right: 7%;
 }
 .img img {
   position: absolute;
@@ -60,4 +61,35 @@
   height: auto;
   animation-delay: 1s;
   animation: fadeIn 1s;
+}
+
+.content-right {
+  position: absolute;
+  height: 80vh;
+  top: 10%;
+  right: 8%;
+  h3 {
+    font-weight: 200;
+    position: absolute;
+    display: block;
+    transform: rotate(90deg) translateX(+3%) translateY(180%);
+    width: 200px;
+    top: 17%;
+  }
+  ul {
+    list-style: none;
+    position: absolute;
+    display: block;
+    padding: 0;
+    bottom: -15px;
+    li {
+      margin-top: 50%;
+      a {
+        img {
+          width: 46px;
+          height: auto;
+        }
+      }
+    }
+  }
 }
