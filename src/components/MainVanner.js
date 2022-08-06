@@ -18,22 +18,23 @@ const MainVanner = () => {
   const helloText = ['안', '녕', '하', '세', '요', '.']
   useInterval(() => {
     setCount(count + 1)
-  }, 4000)
+  }, 4500)
   return (
-    <>
+    <div className="content">
       <div className="content-left">
         <span className="tags">&lt;h1&gt;</span>
         <div className="text-zone">
           <AnimatedLetters
             letterClass="text-animate helloText"
-            idx={5}
+            idx={19}
             strArray={helloText}
           />
           <br />
           <AnimatedLetters
             letterClass="text-animate mainText"
             strArray={mainText[count % mainText.length]}
-            idx={count == 0 ? 20 : 1}
+            idx={count == 0 ? 22 : 1}
+            // idx={20}
           />
           <h3>새로운 것을 찾는 것을 두려워하지 않는 탐험가</h3>
           <Link to="/about" className="flat-button">
@@ -72,7 +73,7 @@ const MainVanner = () => {
           </li>
         </ul>
       </div>
-    </>
+    </div>
   )
 }
 

@@ -1,6 +1,9 @@
 .base {
+  opacity: 0;
+  animation: 2s fadeIn 1s linear both;
   line-height: 2.5rem;
   margin: 0 0 0 7%;
+  will-change: contents;
   h1 {
     font-weight: 800;
     font-size: 3.3rem;
