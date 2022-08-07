@@ -1,59 +1,53 @@
-import React from 'react'
+import { useState, React, useEffect, useLayoutEffect, useRef } from 'react'
 import { Canvas, extend, useThree } from '@react-three/fiber'
 import './Card.scss'
 import { Suspense, Spinner } from 'react'
 import * as THREE from 'three'
-import {
-  useGLTF,
-  MeshReflectorMaterial,
-  Environment,
-  Stage,
-  PresentationControls,
-} from '@react-three/drei'
+import nameCard from '../assets/models/nameCard.glb'
+import { useGLTF, SpotLight, PresentationControls } from '@react-three/drei'
+
 function Model(props) {
-  const { scene, nodes, materials } = useGLTF('../assets/models/nameCard.gltf')
+  const { scene, nodes, materials } = useGLTF(nameCard)
   return <primitive object={scene} {...props} />
 }
-const card = () => {
+const Card = () => {
+  const [coords, setCoords] = useState({ x: 0, y: 0 })
+
+  // const [clientSize, setClientSize] = useState(0)
+  // const ref = useRef(null)
+  // useEffect(() => {
+  //   setClientSize(ref.current.clientHeight)
+  // }, [])
+
+  const handleMouseMove = (event) => {
+    setCoords({
+      x: event.clientX - event.target.offsetLeft,
+      y: event.clientY - event.target.offsetTop,
+    })
+  }
   return (
-    <Canvas dpr={[1, 2]} shadows camera={{ fov: 45 }}>
-      <color attach="background" args={['#101010']} />
-      <fog attach="fog" args={['#101010', 10, 20]} />
-      <Suspense fallback={<Spinner />}>
-        {/* <Environment path="/cube"/> */}
-        <PresentationControls
-          speed={1.5}
-          global
-          zoom={0.7}
-          polar={[-0.1, Math.PI / 4]}
-        >
-          <Stage
-            environment={null}
-            intensity={1}
-            contactShadow={false}
-            shadowBias={-0.0015}
+    <div className="container" onMouseMove={handleMouseMove}>
+      <Suspense fallback={null}>
+        <Canvas dpr={[1, 2]} shadows camera={{ fov: 1 }}>
+          {/* <color attach="background" args={['#0A402']} /> */}
+          <PresentationControls
+            speed={1.5}
+            rotation={[coords.y / 100 - 1.1, 3.14, -coords.x / 300]}
+            global
+            snap={true}
+            zoom={0.8}
+            // polar={[0, Math.PI / 2]}
+            // azimuth={[0.00001, -0.0001]}
+            // config={{ mass: 1, tension: 170, friction: 26 }}
           >
-            <Model scale={1} />
-          </Stage>
-          <mesh rotation={[-Math.PI / 2, 0, 0]}>
-            <planeGeometry args={[170, 170]} />
-            <MeshReflectorMaterial
-              blur={[300, 100]}
-              resolution={2048}
-              mixBlur={1}
-              mixStrength={40}
-              roughness={1}
-              depthScale={1.2}
-              minDepthThreshold={0.4}
-              maxDepthThreshold={1.4}
-              color="#101010"
-              metalness={0.5}
-            />
-          </mesh>
-        </PresentationControls>
+            <ambientLight />
+            <Model scale={0.00005} /> <planeGeometry args={[0, 0]} />
+            <pointLight position={[10, 10, 10]} shadows />
+          </PresentationControls>
+        </Canvas>
       </Suspense>
-    </Canvas>
+    </div>
   )
 }
 
-export default card
+export default Card
