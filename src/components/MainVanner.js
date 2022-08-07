@@ -49,7 +49,7 @@ const MainVanner = () => {
       </div>
       <div className="content-right">
         <h3>
-          There's nothing uglier <br /> than regret
+          There's nothing uglier <br /> than regret.
         </h3>
         <ul>
           <li>
