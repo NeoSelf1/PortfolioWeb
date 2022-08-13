@@ -4,27 +4,27 @@ $primary-color: #0a402c;
 @import '~loaders.css/src/animations/pacman.scss';
 
 @font-face {
-  font-family: 'AppleSDGothicNeoUL';
-  src: url('./assets/fonts/AppleSDGothicNeoUL.ttf') format ('ttf');
+  font-family: 'UL';
+  src: url('./assets/fonts/AppleSDGothicNeoUL.ttf');
 }
 
 @font-face {
-  font-family: 'AppleSDGothicNeoM';
-  src: url('./assets/fonts/AppleSDGothicNeoM.ttf') format ('ttf');
+  font-family: 'M';
+  src: url('./assets/fonts/AppleSDGothicNeoM.ttf');
 }
 
 @font-face {
-  font-family: 'AppleSDGothicNeoH';
-  src: url('./assets/fonts/AppleSDGothicNeoH.ttf') format ('ttf');
+  font-family: 'H';
+  src: url('./assets/fonts/AppleSDGothicNeoH.ttf');
 }
 
 @font-face {
-  font-family: 'AppleSDGothicNeoSB';
-  src: url('./assets/fonts/AppleSDGothicNeoSB.ttf') format ('ttf');
+  font-family: 'SB';
+  src: url('./assets/fonts/AppleSDGothicNeoSB.ttf');
 }
-
-textarea {
-  font-family: 'AppleSDGothicNeoM';
+@font-face {
+  font-family: 'EB';
+  src: url('./assets/fonts/AppleSDGothicNeoEB.ttf');
 }
 .loader-active {
   display: block;

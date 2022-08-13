@@ -1,6 +1,5 @@
 import React from 'react'
 import './Introducing.scss'
-import frame from '../assets/images/frame.png'
 import logo from '../assets/images/logo.png'
 
 const Introducing = () => {

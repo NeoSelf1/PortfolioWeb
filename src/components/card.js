@@ -13,12 +13,6 @@ function Model(props) {
 const Card = () => {
   const [coords, setCoords] = useState({ x: 0, y: 0 })
 
-  // const [clientSize, setClientSize] = useState(0)
-  // const ref = useRef(null)
-  // useEffect(() => {
-  //   setClientSize(ref.current.clientHeight)
-  // }, [])
-
   const handleMouseMove = (event) => {
     setCoords({
       x: event.clientX - event.target.offsetLeft,

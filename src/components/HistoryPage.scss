@@ -1,0 +1,189 @@
+.content_r {
+  display: flex;
+  position: absolute;
+  margin: 0;
+  width: 50vw;
+  top: -5vh;
+  flex-direction: row;
+  .line {
+    border: 1px solid #e8e8e8;
+    position: absolute;
+    width: 50vw;
+    transform: translateX(-9%);
+    margin-top: -2vh;
+  }
+  .line_green {
+    position: absolute;
+    width: 2px;
+    margin: 0;
+    height: 15vh;
+    background-color: #0a402c;
+    top: -50%;
+  }
+
+  .categ {
+    width: 1.6vw;
+    height: fit-content;
+    padding: 0.6vw;
+    transform: translateX(-50%);
+    background-color: #0a402c;
+    border-radius: 36%;
+    // border
+  }
+  .second {
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-153%);
+    align-items: flex-end;
+    height: fit-content;
+    line-height: 0.8rem;
+    margin: 0 0.3vw;
+    .year {
+      font-family: 'EB';
+      font-size: 3.7rem;
+      color: #ffffff;
+      text-shadow: -1px 0 #747474, 0 1px #747474, 1px 0 #747474, 0 -1px #747474;
+    }
+    .month {
+      margin: -0.5rem 0 0.2rem 0;
+      font-family: 'SB';
+      color: #aaaaaa;
+      font-size: 2.1rem;
+    }
+    .more {
+      width: 2.1vw;
+      position: absolute;
+      right: 0;
+      top: 159%;
+      border-radius: 20%;
+      box-shadow: 0px 13px 42px 15px #e8e8e8;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        width: 3vw;
+        transform: translateX(15%) translateY(-15%);
+      }
+    }
+  }
+  .third {
+    margin-left: 2vw;
+    margin-top: 0.5rem;
+    .title {
+      font-family: 'EB';
+      font-size: 1rem;
+      color: #747474;
+      margin: 0;
+      transform: translateY(-24%);
+    }
+    .detail {
+      font-family: 'M';
+      color: #747474;
+      width: 16vw;
+      font-size: 1rem;
+      margin-top: -0.2rem;
+    }
+    .image {
+      position: absolute;
+      width: 16vw;
+      height: 16vw;
+      margin-top: 1.8rem;
+      background-color: #fff;
+      box-shadow: 0px 13px 42px 15px #e8e8e8;
+    }
+  }
+}
+//************************************************************************************************************************************
+.content_l {
+  display: flex;
+  position: absolute;
+  right: 50%;
+  width: 100vw;
+  top: -5vh;
+  flex-direction: row-reverse;
+  // background-color: chartreuse;
+  .line {
+    border: 1px solid #e8e8e8;
+    position: absolute;
+    width: 50vw;
+    transform: translateX(+9%);
+    margin-top: -2vh;
+  }
+  .line_green {
+    position: absolute;
+    width: 2px;
+    height: 15vh;
+    background-color: #0a402c;
+    transform: translateX(+100%);
+    top: -50%;
+  }
+  .categ {
+    width: 1.6vw;
+    height: fit-content;
+    padding: 0.6vw;
+    transform: translateX(+50%);
+    background-color: #0a402c;
+    border-radius: 36%;
+  }
+  .second {
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-153%);
+    align-items: flex-start;
+    height: fit-content;
+    line-height: 0.8rem;
+    margin: 0 0.3vw;
+    .year {
+      font-family: 'EB';
+      font-size: 3.7rem;
+      color: #ffffff;
+      text-shadow: -1px 0 #747474, 0 1px #747474, 1px 0 #747474, 0 -1px #747474;
+    }
+    .month {
+      margin: -0.5rem 0 0.2rem 0;
+      font-family: 'SB';
+      color: #aaaaaa;
+      font-size: 2.1rem;
+    }
+    .more {
+      width: 2.1vw;
+      position: absolute;
+      left: 0;
+      top: 159%;
+      border-radius: 20%;
+      box-shadow: 0px 13px 42px 15px #e8e8e8;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        width: 3vw;
+        transform: translateX(-15%) translateY(-15%);
+      }
+    }
+  }
+  .third {
+    margin-right: 2vw;
+    margin-top: 0.5rem;
+    .title {
+      font-family: 'EB';
+      font-size: 1rem;
+      color: #747474;
+      margin: 0;
+      transform: translateY(-24%);
+    }
+    .detail {
+      font-family: 'M';
+      color: #747474;
+      width: 16vw;
+      font-size: 1rem;
+      margin-top: -0.2rem;
+    }
+    .image {
+      position: absolute;
+      width: 16vw;
+      height: 16vw;
+      margin-top: 1.8rem;
+      background-color: #fff;
+      box-shadow: 0px 13px 42px 15px #e8e8e8;
+    }
+  }
+}
+* {
+  font-weight: normal;
+}
