@@ -71,28 +71,24 @@
     animation: 3s slidein;
   }
   .img {
+    opacity: 0;
+    animation: fadeIn 1s linear both;
+    animation-delay: 2.4s;
+    width: auto;
     .base {
       position: absolute;
       left: 62%;
       top: 51%;
-      transform: translateX(-50%) translateY(-50%);
       height: 47vw;
-      width: auto;
-      opacity: 0;
-      animation: fadeIn 1s linear both;
-      animation-delay: 2.4s;
+      transform: translateX(-50%) translateY(-50%);
     }
     .arm {
       position: absolute;
       left: 68.4%;
       top: 49.2%;
       z-index: 1;
-      transform: translateX(-50%) translateY(-50%);
       height: 17.1vw;
-      width: auto;
-      opacity: 0;
-      animation: fadeIn 1s linear both;
-      animation-delay: 2.4s;
+      transform: translateX(-50%) translateY(-50%);
     }
     .logo {
       position: absolute;
@@ -101,16 +97,28 @@
       height: 33vw;
       transform: translateX(-50%) translateY(-50%);
     }
-
-    .frame {
+    .O {
       position: absolute;
-      left: 65%;
-      z-index: -1;
-      top: 54%;
-      transform: translateX(-50%) translateY(-50%);
-      height: 42vw;
-      width: auto;
-      opacity: 0.4;
+      left: 74%;
+      top: 34%;
+      z-index: 2;
+      rotate: 40deg;
+      width: 5vw;
+      height: 5vw;
+      background-color: #fff;
+      border: #0b402c 3px solid;
+    }
+    .o {
+      position: absolute;
+      left: 74.6%;
+      top: 35.1%;
+      z-index: 3;
+      rotate: 45deg;
+      width: 4vw;
+      height: 4vw;
+      background-color: #fff;
+      border: #0b402c dashed 1px;
+      animation-delay: 5s;
     }
   }
 
