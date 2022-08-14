@@ -70,17 +70,48 @@
     }
     animation: 3s slidein;
   }
-  .img img {
-    position: absolute;
-    z-index: 3;
-    left: 66%;
-    top: 15%;
-    transform: translateX(-50%);
-    width: 80vh;
-    height: auto;
-    opacity: 0;
-    animation: fadeIn 1s linear both;
-    animation-delay: 2.4s;
+  .img {
+    .base {
+      position: absolute;
+      left: 62%;
+      top: 51%;
+      transform: translateX(-50%) translateY(-50%);
+      height: 47vw;
+      width: auto;
+      opacity: 0;
+      animation: fadeIn 1s linear both;
+      animation-delay: 2.4s;
+    }
+    .arm {
+      position: absolute;
+      left: 68.4%;
+      top: 49.2%;
+      z-index: 1;
+      transform: translateX(-50%) translateY(-50%);
+      height: 17.1vw;
+      width: auto;
+      opacity: 0;
+      animation: fadeIn 1s linear both;
+      animation-delay: 2.4s;
+    }
+    .logo {
+      position: absolute;
+      left: 62.8%;
+      top: 62.8%;
+      height: 33vw;
+      transform: translateX(-50%) translateY(-50%);
+    }
+
+    .frame {
+      position: absolute;
+      left: 65%;
+      z-index: -1;
+      top: 54%;
+      transform: translateX(-50%) translateY(-50%);
+      height: 42vw;
+      width: auto;
+      opacity: 0.4;
+    }
   }
 
   .content-right {

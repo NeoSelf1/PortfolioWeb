@@ -4,8 +4,11 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import useInterval from './useInterval'
 import AnimatedLetters from './AnimatedLetters'
-import Main from '../assets/images/main.png'
-import logo from '../assets/images/logo.png'
+import Main_frame from '../assets/images/main_frame.png'
+import Main_base from '../assets/images/main_base.png'
+import Main_arm from '../assets/images/main_arm.png'
+import Main_logo from '../assets/images/main_logo.svg'
+import Logo from '../assets/images/logo.png'
 const MainVanner = () => {
   const [count, setCount] = useState(0)
   //prettier-ignore
@@ -45,7 +48,10 @@ const MainVanner = () => {
       </div>
       <div className="midLine"></div>
       <div className="img">
-        <img src={Main} alt="main" />
+        <img className="frame" src={Main_frame} alt="main" />
+        <img className="base" src={Main_base} alt="main_base" />
+        <img className="arm" src={Main_arm} alt="main_arm" />
+        <img className="logo" src={Main_logo} alt="main_arm" />
       </div>
       <div className="content-right">
         <h3>
@@ -58,17 +64,17 @@ const MainVanner = () => {
               rel="noreferrer"
               href="https://github.com/NeoSelf1"
             >
-              <img src={logo} alt="github" />
+              <img src={Logo} alt="github" />
             </a>
           </li>
           <li>
             <a target="_blank" rel="noreferrer" href="www.naver.com">
-              <img src={logo} alt="github" />
+              <img src={Logo} alt="github" />
             </a>
           </li>
           <li>
             <a target="_blank" rel="noreferrer" href="www.naver.com">
-              <img src={logo} alt="github" />
+              <img src={Logo} alt="github" />
             </a>
           </li>
         </ul>
