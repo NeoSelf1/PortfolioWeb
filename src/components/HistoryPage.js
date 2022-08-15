@@ -23,7 +23,7 @@ const HistoryPage = ({
         <h1 className="year">{year}</h1>
         <h2 className="month">{month}</h2>
         {link && (
-          <a href={link}>
+          <a target="_blank" rel="noreferrer" href={link}>
             <img src={plus} alt="plus" className="more" />
           </a>
         )}

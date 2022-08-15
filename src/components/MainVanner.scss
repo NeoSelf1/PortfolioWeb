@@ -1,12 +1,11 @@
 .content {
-  will-change: contents;
   .content-left {
     position: absolute;
     top: 54%;
     transform: translateY(-50%);
     left: 40px;
     .tags {
-      font-weight: 200;
+      font-family: 'L';
       margin-left: 0;
       font-size: 1rem;
       margin-left: 2vh;
@@ -15,17 +14,17 @@
       margin: 18.2vh 0 18.2vh 10vh;
       width: 100%;
       .helloText {
-        font-weight: 500;
-        font-size: 1.5rem;
+        font-family: 'UL';
+        font-size: 1.6rem;
       }
       .mainText {
-        margin-top: 0.8vh;
-        font-weight: 800;
+        font-family: 'H';
+        margin-top: 0.2rem;
         font-size: 3.3rem;
       }
       h3 {
         margin: 5.4vh 0 8vh 0;
-        font-weight: 500;
+        font-family: 'L';
         opacity: 0;
         animation: fadeIn 2s forwards;
         animation-delay: 3s;
@@ -33,15 +32,13 @@
     }
     .flat-button {
       background-color: #0b402c;
-      font-weight: 200;
+      font-family: 'UL';
       font-size: 2rem;
       color: white;
       text-decoration: none;
-      padding: 14px 20px;
+      padding: 0.2rem 1rem 0.5rem 1rem;
       animation: 1s fadeIn 1.8s backwards;
-      white-space: nowrap;
       transition: all 0.3s ease-out;
-
       &:hover {
         background-color: #ffd700;
         color: #333;
@@ -75,12 +72,22 @@
     animation: fadeIn 1s linear both;
     animation-delay: 2.4s;
     width: auto;
-    .base {
+    z-index: -10;
+    .base_container {
       position: absolute;
-      left: 62%;
-      top: 51%;
-      height: 47vw;
+      left: 70%;
+      top: 55%;
+      height: 45vw;
+      width: 40vw;
       transform: translateX(-50%) translateY(-50%);
+      overflow: hidden;
+      .base {
+        position: absolute;
+        left: 40%;
+        top: 45%;
+        height: 47vw;
+        transform: translateX(-50%) translateY(-50%);
+      }
     }
     .arm {
       position: absolute;
@@ -128,10 +135,10 @@
     top: 10%;
     right: 8%;
     h3 {
-      font-weight: 200;
+      font-family: 'UL';
       position: absolute;
       display: block;
-      transform: rotate(90deg) translateX(+3%) translateY(180%);
+      transform: rotate(90deg) translateX(+3%) translateY(156%);
       width: 200px;
       top: 17%;
     }

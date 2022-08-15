@@ -47,7 +47,9 @@ const MainVanner = () => {
       </div>
       <div className="midLine"></div>
       <div className="img">
-        <img className="base" src={Main_base} alt="main_base" />
+        <div className="base_container">
+          <img className="base" src={Main_base} alt="main_base" />
+        </div>
         <img className="arm" src={Main_arm} alt="main_arm" />
         <img className="logo" src={Main_logo} alt="main_arm" />
         <div className="O"></div>
