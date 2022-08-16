@@ -1,33 +1,61 @@
+$bp: 767px;
 .content {
+  @media (max-width: $bp) {
+    // height: 100vh;
+  }
   .content-left {
     position: absolute;
     top: 54%;
     transform: translateY(-50%);
     left: 40px;
+    @media (max-width: $bp) {
+      left: 0;
+    }
     .tags {
       font-family: 'L';
       margin-left: 0;
       font-size: 1rem;
       margin-left: 2vh;
+      display: flex;
+      @media (max-width: $bp) {
+        display: none;
+      }
     }
     .text-zone {
       margin: 18.2vh 0 18.2vh 10vh;
       width: 100%;
+      @media (max-width: $bp) {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #fff;
+      }
       .helloText {
         font-family: 'UL';
         font-size: 1.6rem;
+        @media (max-width: $bp) {
+          font-size: 3rem;
+        }
       }
       .mainText {
         font-family: 'H';
         margin-top: 0.2rem;
         font-size: 3.3rem;
+        @media (max-width: $bp) {
+          font-size: 1.5rem;
+        }
       }
       h3 {
         margin: 5.4vh 0 8vh 0;
         font-family: 'L';
+        font-size: 0.9rem;
         opacity: 0;
         animation: fadeIn 2s forwards;
         animation-delay: 3s;
+        @media (max-width: $bp) {
+          text-align: center;
+        }
       }
     }
     .flat-button {
@@ -43,9 +71,19 @@
         background-color: #ffd700;
         color: #333;
       }
+      @media (max-width: $bp) {
+        color: #0b402c;
+        font-family: 'M';
+        line-height: 5rem;
+        font-size: 5rem;
+        padding: 0 5rem 0.5rem 5rem;
+        background-color: #fff;
+        border-radius: 0 4rem 0 4rem;
+      }
     }
   }
   .midLine {
+    display: flex;
     border: 1px solid #cfcfcf;
     position: absolute;
     height: 80%;
@@ -66,6 +104,44 @@
       }
     }
     animation: 3s slidein;
+    @media (max-width: $bp) {
+      display: none;
+    }
+  }
+  .base_container {
+    opacity: 0;
+    animation: fadeIn 1s linear both;
+    animation-delay: 2.4s;
+    position: absolute;
+    left: 70%;
+    top: 55%;
+    height: 45vw;
+    width: 40vw;
+    transform: translateX(-50%) translateY(-50%);
+    overflow: hidden;
+    @media (max-width: $bp) {
+      background-color: rgb(31, 31, 31);
+      z-index: -1;
+      left: 50%;
+      top: 10%;
+      width: 100%;
+      height: 80vh;
+      transform: translateX(-50%);
+    }
+    .base {
+      position: absolute;
+      left: 46%;
+      top: 45%;
+      height: 47vw;
+      transform: translateX(-50%) translateY(-50%);
+      @media (max-width: $bp) {
+        height: 200vw;
+        width: auto;
+        left: 53%;
+        top: 60%;
+        opacity: 0.4;
+      }
+    }
   }
   .img {
     opacity: 0;
@@ -73,21 +149,9 @@
     animation-delay: 2.4s;
     width: auto;
     z-index: -10;
-    .base_container {
-      position: absolute;
-      left: 70%;
-      top: 55%;
-      height: 45vw;
-      width: 40vw;
-      transform: translateX(-50%) translateY(-50%);
-      overflow: hidden;
-      .base {
-        position: absolute;
-        left: 40%;
-        top: 45%;
-        height: 47vw;
-        transform: translateX(-50%) translateY(-50%);
-      }
+    display: flex;
+    @media (max-width: $bp) {
+      display: none;
     }
     .arm {
       position: absolute;
@@ -114,6 +178,11 @@
       height: 5vw;
       background-color: #fff;
       border: #0b402c 3px solid;
+      display: flex;
+
+      @media (max-width: $bp) {
+        display: none;
+      }
     }
     .o {
       position: absolute;
@@ -126,6 +195,11 @@
       background-color: #fff;
       border: #0b402c dashed 1px;
       animation-delay: 5s;
+      display: flex;
+
+      @media (max-width: $bp) {
+        display: none;
+      }
     }
   }
 
@@ -134,6 +208,13 @@
     height: 80vh;
     top: 10%;
     right: 8%;
+    transform: none;
+    @media (max-width: $bp) {
+      // left: 25vw;
+      right: 50%;
+      width: 50vw;
+      transform: translateX(+50%);
+    }
     h3 {
       font-family: 'UL';
       position: absolute;
@@ -141,15 +222,29 @@
       transform: rotate(90deg) translateX(+3%) translateY(156%);
       width: 200px;
       top: 17%;
+      display: flex;
+
+      @media (max-width: $bp) {
+        display: none;
+      }
     }
     ul {
       list-style: none;
       position: absolute;
-      display: block;
+      display: flex;
+      flex-direction: column;
       padding: 0;
       bottom: -15px;
+
+      @media (max-width: $bp) {
+        position: relative;
+        margin-top: 50vh;
+        flex-direction: row;
+        justify-content: space-between;
+      }
       li {
         margin-top: 50%;
+        align-items: center;
         a {
           img {
             width: 46px;

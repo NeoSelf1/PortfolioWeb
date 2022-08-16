@@ -141,7 +141,7 @@ const History = () => {
         <Animator animation={ZoomInScrollOut_err}>
           {/* prettier-ignore */}
           <HistoryPage year="2022" month="Jan-Feb" categ={career} title="스마투스 개발자 사원 근무"
-          detail="기존에 제작했던 워드프레스 기반의 회사 홈페이지를 리액트 프레임 기반의 웹으로 리뉴얼하는 프로젝트를 혼자서 진행." link="www.smartooth.co" side="r"/>
+          detail="기존에 제작했던 워드프레스 기반의 회사 홈페이지를 리액트 프레임 기반의 웹으로 리뉴얼하는 프로젝트를 혼자서 진행." link="http://www.smartooth.co" side="r"/>
         </Animator>
       </ScrollPage>
       <ScrollPage page={15}>

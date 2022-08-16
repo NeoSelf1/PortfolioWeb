@@ -10,6 +10,13 @@ import Main_logo from '../assets/images/main_logo.svg'
 import Logo from '../assets/images/logo.png'
 const MainVanner = () => {
   const [count, setCount] = useState(0)
+  // const [coords, setCoords] = useState({ x: 0, y: 0 })
+  // const handleMouseMove = (event) => {
+  //   setCoords({
+  //     width: event.clientX,
+  //     height: event.clientY,
+  //   })
+  // }
   //prettier-ignore
   const mainText = [['저', '는', ' ', 'N', 'E', 'O', 'S', 'E', 'L', 'F', '입', '니', '다', '.'],
                   ['저', '는', ' ', '프','론','트','엔','드',' ','개','발','자','입','니','다','.',],
@@ -24,7 +31,7 @@ const MainVanner = () => {
   return (
     <div className="content">
       <div className="content-left">
-        <span className="tags">&lt;h1&gt;</span>
+        <span className="tags">&lt;div&gt;</span>
         <div className="text-zone">
           <AnimatedLetters
             letterClass="text-animate helloText"
@@ -36,20 +43,21 @@ const MainVanner = () => {
             letterClass="text-animate mainText"
             strArray={mainText[count % mainText.length]}
             idx={count == 0 ? 22 : 1}
-            // idx={20}
           />
-          <h3>새로운 것을 찾는 것을 두려워하지 않는 탐험가</h3>
+          <h3>
+            React / Rhino3D / Adobe AfterEffect / Adobe Illustrator / Wordpress
+          </h3>
           <Link to="/about" className="flat-button">
             +
           </Link>
         </div>
-        <span className="tags">&lt;/h1&gt;</span>
+        <span className="tags">&lt;/div&gt;</span>
       </div>
       <div className="midLine"></div>
+      <div className="base_container">
+        <img className="base" src={Main_base} alt="main_base" />
+      </div>
       <div className="img">
-        <div className="base_container">
-          <img className="base" src={Main_base} alt="main_base" />
-        </div>
         <img className="arm" src={Main_arm} alt="main_arm" />
         <img className="logo" src={Main_logo} alt="main_arm" />
         <div className="O"></div>

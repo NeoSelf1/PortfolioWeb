@@ -1,4 +1,101 @@
 .container {
-  height: 70vh;
   animation: 1s fadeIn 1.8s backwards;
+  display: flex;
+  flex-direction: row;
+  .title {
+    position: fixed;
+    top: 14%;
+    left: 4.3vw;
+    h1 {
+      font-family: 'EB';
+      color: #0a402c;
+      font-size: 3rem;
+      img {
+        width: 60px;
+        height: auto;
+        transform: translateY(+18%);
+      }
+    }
+  }
+  .card {
+    height: 80vh;
+    width: 60vw;
+    margin-top: 4rem;
+  }
+
+  .introduce {
+    height: 76vh;
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    margin-top: 6rem;
+    margin-left: 10vw;
+    justify-content: space-between;
+    .mgS {
+      margin: 0 0 0 1rem;
+    }
+    .mgM {
+      margin: 0 0 0 6rem;
+    }
+    .mgL {
+      margin: 0 0 0 9rem;
+    }
+    .subText {
+      h3 {
+        font-family: 'UL';
+        font-size: 1rem;
+        line-height: 1.4rem;
+      }
+    }
+    .area {
+      .line {
+        border: 0.5px solid #747474;
+        margin: -0.5rem 0 0rem 0;
+      }
+      h1 {
+        font-family: 'SB';
+        font-size: 1.4rem;
+      }
+      .subTitle h2 {
+        font-family: 'SB';
+        font-size: 1rem;
+        line-height: 1.6rem;
+        margin-left: 0.3rem;
+      }
+      .flexEnd {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0.6rem;
+        h3 {
+          color: #747474;
+          font-family: 'UL';
+          text-align: end;
+          line-height: 0.4rem;
+        }
+      }
+      .present {
+        position: absolute;
+        margin: 1.15rem 0 0 -1rem;
+        font-size: 0.7rem;
+        font-family: 'EB';
+      }
+      .majors {
+        position: absolute;
+        margin: -1.4rem 0 0 0.1rem;
+        font-family: 'UL';
+        font-size: 0.7rem;
+      }
+    }
+    .text-zone {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .abs {
+      position: absolute;
+      margin: -2.15rem 0 0 2.4rem;
+      font-family: 'UL';
+      font-size: 0.8rem;
+    }
+  }
 }
