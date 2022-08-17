@@ -17,7 +17,6 @@ import KoreaFinland from '../assets/images/korea-finland.jpeg'
 import Nis from '../assets/images/nis.jpg'
 import Dfl from '../assets/images/dfl.jpeg'
 import Hongik from '../assets/images/hongik.jpg'
-import frame from '../assets/images/frame.jpg'
 import HongikStartUp from '../assets/images/창업경진대회.jpeg'
 import SejongStartUp from '../assets/images/세종시.gif'
 import GCDP from '../assets/images/GCDP.jpeg'
@@ -156,7 +155,6 @@ const History = () => {
         </a> */}
         <h1 className="title">Timeline</h1>
         <div className="midLine"></div>
-        <img className="frame" src={frame} alt="frame" />
       </div>
     </ScrollContainer>
   )

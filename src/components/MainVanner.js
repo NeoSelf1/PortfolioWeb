@@ -1,6 +1,6 @@
 import React from 'react'
 import './MainVanner.scss'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import useInterval from './useInterval'
 import AnimatedLetters from './AnimatedLetters'
@@ -10,21 +10,30 @@ import Main_logo from '../assets/images/main_logo.svg'
 import Logo from '../assets/images/logo.png'
 const MainVanner = () => {
   const [count, setCount] = useState(0)
-  // const [coords, setCoords] = useState({ x: 0, y: 0 })
-  // const handleMouseMove = (event) => {
-  //   setCoords({
-  //     width: event.clientX,
-  //     height: event.clientY,
-  //   })
-  // }
+  const [size, setSize] = useState({
+    width: window.innerWidth,
+    height: undefined,
+  })
+
+  useEffect(() => {
+    const handleResize = () => {
+      setSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      })
+    }
+    window.addEventListener('resize', handleResize)
+
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
   //prettier-ignore
-  const mainText = [['저', '는', ' ', 'N', 'E', 'O', 'S', 'E', 'L', 'F', '입', '니', '다', '.'],
-                  ['저', '는', ' ', '프','론','트','엔','드',' ','개','발','자','입','니','다','.',],
-                  ['저', '는', ' ', '웹',' ','개','발','자', '입', '니', '다', '.'],
-                  ['저', '는', ' ', '창', '업', '을', ' ', '꿈', '꾸', '는','사','람', '입', '니', '다', '.'],
-                  ['저', '는', ' ', 'U', 'X', '/', 'U', 'I',' ', '디', '자','이','너', '입', '니', '다', '.'],
+  const mainText = [['저', '는', ' ', 'N', 'E', 'O', 'S', 'E', 'L', 'F', '입', '니', '다'],
+                  ['저', '는', ' ', '프','론','트','엔','드',' ','개','발','자','입','니','다'],
+                  ['저', '는', ' ', '웹',' ','개','발','자', '입', '니', '다'],
+                  ['저', '는', ' ', '창', '업', '을', ' ', '꿈', '꾸', '는','사','람', '입', '니', '다'],
+                  ['저', '는', ' ', 'U', 'X', '/', 'U', 'I',' ', '디', '자','이','너', '입', '니', '다'],
   ]
-  const helloText = ['안', '녕', '하', '세', '요', '.']
+  const helloText = ['안', '녕', '하', '세', '요']
   useInterval(() => {
     setCount(count + 1)
   }, 4500)
@@ -45,7 +54,18 @@ const MainVanner = () => {
             idx={count == 0 ? 22 : 1}
           />
           <h3>
-            React / Rhino3D / Adobe AfterEffect / Adobe Illustrator / Wordpress
+            {size.width < 767 ? (
+              // prettier-ignore
+              <>
+                React <br/>
+                Rhino3D <br/>
+                Adobe AfterEffect <br/>
+                Adobe Illustrator <br/>
+                Wordpress
+              </>
+            ) : (
+              'React / Rhino3D / Adobe AfterEffect / Adobe Illustrator / Wordpress'
+            )}
           </h3>
           <Link to="/about" className="flat-button">
             +
