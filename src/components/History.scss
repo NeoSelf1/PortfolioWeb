@@ -12,6 +12,9 @@
     left: 50vw;
     height: 100vh;
     border: 1px solid #0a402c;
+    @media (max-width: 1000px) {
+      left: 10vw;
+    }
   }
   .title {
     color: #0a402c;
@@ -20,6 +23,11 @@
     position: fixed;
     top: 14%;
     left: 4.3vw;
+    @media (max-width: 1000px) {
+      top: 8%;
+      left: 6.45vw;
+      font-size: 3rem;
+    }
   }
   .test {
     position: fixed;
