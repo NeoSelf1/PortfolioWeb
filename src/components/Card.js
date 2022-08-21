@@ -81,7 +81,7 @@ const Card = () => {
               <h2>생년월일</h2>
               <h2>주소</h2>
             </div>
-            <div className="subText mgL">
+            <div className="subText">
               <h3>김형석</h3>
               <h3>010.5595.1105</h3>
               <h3>1999.11.05</h3>
@@ -93,17 +93,25 @@ const Card = () => {
           <h1>학력</h1>
           <div className="line"></div>
           <div className="text-zone">
-            <div className="subText mgS">
+            <div className="School mgS">
               <h2 className="present">현</h2>
               <h3>홍익대학교</h3>
               <h3 className="majors">디자인컨버전스 학부 & 컴퓨터 공학</h3>
               <h3>동두천 외국어 고등학교</h3>
-              <h3>Nanjing International School</h3>
+              <h3>
+                <b>Nanjing International School</b>
+              </h3>
             </div>
-            <div className="subText flexEnd mgM">
-              <h3>졸업예정</h3>
-              <h3>졸업</h3>
-              <h3>졸업</h3>
+            <div className="subText gray">
+              <h3>
+                <a>졸업예정</a>
+              </h3>
+              <h3>
+                <a>졸업</a>
+              </h3>
+              <h3>
+                <a>졸업</a>
+              </h3>
             </div>
           </div>
         </div>
@@ -117,13 +125,14 @@ const Card = () => {
               <h2>단점</h2>
               <h2>MBTI</h2>
             </div>
-            <div className="subText mgL">
+            <div className="subText">
               <h3>피아노 연주</h3>
               <h3>비빔면, 콜라</h3>
               <h3>타인 공감능력</h3>
               <div>
-                <h3>ENTJ </h3>
-                <h4 className="abs">가 되고 싶은 INTJ</h4>
+                <h3>
+                  ENTJ <b>가 되고 싶은 INTJ</b>{' '}
+                </h3>
               </div>
             </div>
           </div>

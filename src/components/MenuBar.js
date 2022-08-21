@@ -43,13 +43,28 @@ const MenuBar = () => {
         <nav
           className={`${'nav'} ${menuOpen && size.width < 768 ? 'isMenu' : ''}`}
         >
-          <NavLink exact="true" activeclassname="activeHome" to="/">
+          <NavLink
+            exact="true"
+            activeclassname="activeHome"
+            to="/"
+            onClick={menuToggleHandler}
+          >
             Home
           </NavLink>
-          <NavLink exact="true" activeclassname="activeAbout" to="/about">
+          <NavLink
+            exact="true"
+            activeclassname="activeAbout"
+            to="/about"
+            onClick={menuToggleHandler}
+          >
             About
           </NavLink>
-          <NavLink exact="true" activeclassname="activeTimeline" to="/timeline">
+          <NavLink
+            exact="true"
+            activeclassname="activeTimeline"
+            to="/timeline"
+            onClick={menuToggleHandler}
+          >
             Timeline
           </NavLink>
         </nav>

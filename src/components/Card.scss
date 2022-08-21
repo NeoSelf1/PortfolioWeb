@@ -1,19 +1,43 @@
+$XL: 1850px;
+$L: 1650px;
+$M: 1200px;
+$mobile: 1000px;
 .container {
   animation: 1s fadeIn 1.8s backwards;
   display: flex;
   flex-direction: row;
   .title {
-    position: fixed;
+    position: absolute;
     top: 14%;
     left: 4.3vw;
+    @media (max-width: 1550px) {
+      top: 10%;
+    }
+    @media (max-width: 1000px) {
+      position: absolute;
+      left: 50%;
+      width: 100%;
+      top: 12%;
+      text-align: center;
+      transform: translateX(-50%);
+    }
     h1 {
       font-family: 'EB';
       color: #0a402c;
       font-size: 3rem;
+      @media (max-width: 1550px) {
+        font-size: 2.6rem;
+      }
+      @media (max-width: 1000px) {
+        font-size: 1.8rem;
+      }
       img {
         width: 60px;
         height: auto;
         transform: translateY(+18%);
+        @media (max-width: 1000px) {
+          width: 30px;
+        }
       }
     }
   }
@@ -21,6 +45,17 @@
     height: 80vh;
     width: 60vw;
     margin-top: 4rem;
+    @media (max-width: 1750px) {
+      margin-top: 6rem;
+      width: 55vw;
+    }
+    @media (max-width: 1550px) {
+      margin-top: 8rem;
+      width: 50vw;
+    }
+    @media (max-width: 1000px) {
+      display: none;
+    }
   }
 
   .introduce {
@@ -28,74 +63,154 @@
     display: flex;
     flex-direction: column;
     width: 20vw;
-    margin-top: 6rem;
+    margin-top: 12vh;
     margin-left: 10vw;
     justify-content: space-between;
+    @media (max-width: 1000px) {
+      width: 84vw;
+      margin-left: 8vw;
+    }
     .mgS {
       margin: 0 0 0 1rem;
     }
-    .mgM {
-      margin: 0 0 0 6rem;
-    }
-    .mgL {
-      margin: 0 0 0 9rem;
-    }
-    .subText {
-      h3 {
-        font-family: 'UL';
-        font-size: 1rem;
-        line-height: 1.4rem;
-      }
-    }
     .area {
+      width: 100%;
+      @media (max-width: 1750px) {
+        width: 120%;
+      }
+      @media (max-width: 1550px) {
+        width: 150%;
+      }
+      @media (max-width: 1000px) {
+        width: 100%;
+        margin-bottom: 6vh;
+      }
       .line {
         border: 0.5px solid #747474;
-        margin: -0.5rem 0 0rem 0;
+        margin: -0.2rem 0 0rem 0;
       }
       h1 {
         font-family: 'SB';
         font-size: 1.4rem;
-      }
-      .subTitle h2 {
-        font-family: 'SB';
-        font-size: 1rem;
-        line-height: 1.6rem;
-        margin-left: 0.3rem;
-      }
-      .flexEnd {
-        display: flex;
-        flex-direction: column;
-        margin-top: 0.6rem;
-        h3 {
-          color: #747474;
-          font-family: 'UL';
-          text-align: end;
-          line-height: 0.4rem;
+
+        @media (max-width: 1000px) {
+          font-family: 'H';
+          margin-left: 0.4rem;
         }
       }
       .present {
         position: absolute;
-        margin: 1.15rem 0 0 -1rem;
-        font-size: 0.7rem;
+        margin: 1.4rem 0 0 -1rem;
+        font-size: 0.9rem;
         font-family: 'EB';
+        @media (max-width: 1720px) {
+          font-size: 0.7rem;
+        }
+        @media (max-width: 1560px) {
+          margin: 1.6rem 0 0 -1rem;
+        }
+        @media (max-width: 1000px) {
+          margin: 1.35rem 0 0 -1rem;
+          font-size: 0.8rem;
+        }
       }
       .majors {
         position: absolute;
-        margin: -1.4rem 0 0 0.1rem;
+        margin: -1.9rem 0 0 0.1rem;
         font-family: 'UL';
-        font-size: 0.7rem;
+        font-size: 0.9rem;
+        color: #747474;
+        @media (max-width: 1720px) {
+          margin: -1.7rem 0 0 0.1rem;
+        }
+        @media (max-width: 1550px) {
+          margin: -1.9rem 0 0 0.1rem;
+        }
+        @media (max-width: 1000px) {
+          margin: -2.05rem 0 0 0.1rem;
+          font-size: 0.9rem;
+        }
       }
     }
     .text-zone {
       display: flex;
       flex-direction: row;
-    }
-
-    .abs {
-      position: absolute;
-      margin: -2.15rem 0 0 2.4rem;
-      font-family: 'UL';
-      font-size: 0.8rem;
+      .subTitle h2 {
+        //*********************************
+        width: 10vw;
+        font-family: 'SB';
+        font-size: 1.2rem;
+        line-height: 2.4rem;
+        margin-left: 0.3rem;
+        @media (max-width: 1550px) {
+          font-size: 1.3rem;
+          line-height: 2.4rem;
+        }
+        @media (max-width: 1000px) {
+          font-size: 1.3rem;
+          line-height: 1.8rem;
+          width: 40vw;
+        }
+      }
+      .School {
+        //*********************************
+        font-family: 'UL';
+        font-size: 1.2rem;
+        line-height: 1.9rem;
+        width: 80vw;
+        @media (max-width: 1550px) {
+          font-size: 1.2rem;
+        }
+        @media (max-width: 1270px) {
+          font-size: 1.1rem;
+          line-height: 2.1rem;
+        }
+        @media (max-width: 1180px) {
+          font-size: 1rem;
+          line-height: 2.25rem;
+        }
+        @media (max-width: 1000px) {
+          font-size: 1.1rem;
+          line-height: 2.1rem;
+          width: 200vw;
+        }
+        b {
+          font-size: 1.1rem;
+        }
+      }
+      .gray {
+        color: #747474;
+      }
+      .subText {
+        margin-top: 0.5rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        h3 {
+          //*********************************
+          font-family: 'UL';
+          font-size: 1.2rem;
+          line-height: 1rem;
+          @media (max-width: 1550px) {
+            font-size: 1.2rem;
+            line-height: 1.08rem;
+          }
+          @media (max-width: 1000px) {
+            font-family: 'UL';
+            font-size: 1.2rem;
+            line-height: 0.52rem;
+          }
+          b {
+            font-size: 0.8rem;
+          }
+          a {
+            @media (max-width: 1000px) {
+              line-height: 1.15rem;
+            }
+          }
+        }
+      }
     }
   }
 }

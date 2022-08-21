@@ -7,6 +7,7 @@ import AnimatedLetters from './AnimatedLetters'
 import Main_base from '../assets/images/main_base.png'
 import Main_arm from '../assets/images/main_arm.png'
 import Main_logo from '../assets/images/main_logo.svg'
+import Main_frame from '../assets/images/main_frame.png'
 import Logo from '../assets/images/logo.png'
 const MainVanner = () => {
   const [count, setCount] = useState(0)
@@ -54,7 +55,7 @@ const MainVanner = () => {
             idx={count == 0 ? 22 : 1}
           />
           <h3>
-            {size.width < 767 ? (
+            {size.width < 1200 ? (
               // prettier-ignore
               <>
                 React <br/>
@@ -68,7 +69,7 @@ const MainVanner = () => {
             )}
           </h3>
           <Link to="/about" className="flat-button">
-            +
+            {size.width < 1000 ? '더 알아보기' : '+'}
           </Link>
         </div>
         <span className="tags">&lt;/div&gt;</span>
@@ -76,10 +77,11 @@ const MainVanner = () => {
       <div className="midLine"></div>
       <div className="base_container">
         <img className="base" src={Main_base} alt="main_base" />
+        <img className="logo" src={Main_logo} alt="main_arm" />
+        <img className="arm" src={Main_arm} alt="main_arm" />
+        {/* <img className="frame" src={Main_frame} alt="main_frame" /> */}
       </div>
       <div className="img">
-        <img className="arm" src={Main_arm} alt="main_arm" />
-        <img className="logo" src={Main_logo} alt="main_arm" />
         <div className="O"></div>
         <div className="o"></div>
       </div>
