@@ -1,12 +1,11 @@
 import React from 'react'
 import MainVanner from '../components/MainVanner'
-import Loader from 'react-loaders'
-import frame from '../assets/images/frame_1.png'
+import Loader from '../components/Loader.js'
 const Home = () => {
   return (
     <>
+      <Loader />
       <MainVanner />
-      <Loader type="pacman" />
     </>
   )
 }

@@ -1,13 +1,13 @@
 import React from 'react'
-import Loader from 'react-loaders'
+import Loader from '../components/Loader'
 import Card from '../components/Card'
 
 const About = () => {
   return (
-    <div>
+    <>
+      <Loader />
       <Card />
-      <Loader type="pacman" />
-    </div>
+    </>
   )
 }
 

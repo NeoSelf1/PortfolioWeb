@@ -1,11 +1,12 @@
 import React from 'react'
 import History from '../components/History'
-
+import Loader from '../components/Loader'
 const Timeline = () => {
   return (
-    <div>
+    <>
+      <Loader />
       <History />
-    </div>
+    </>
   )
 }
 

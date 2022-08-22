@@ -1,0 +1,19 @@
+.loader_base {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: fadeOut 1s 1.2s;
+  animation-fill-mode: forwards;
+}
+
+.loader_base img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  width: 10vw;
+  @media (max-width: 1000px) {
+    width: 80vw;
+  }
+}

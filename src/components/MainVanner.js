@@ -100,13 +100,21 @@ const MainVanner = () => {
             </a>
           </li>
           <li>
-            <a target="_blank" rel="noreferrer" href="www.naver.com">
-              <img src={Logo} alt="github" />
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.behance.net/729bdc53"
+            >
+              <img src={Logo} alt="behance" />
             </a>
           </li>
           <li>
-            <a target="_blank" rel="noreferrer" href="www.naver.com">
-              <img src={Logo} alt="github" />
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.instagram.com/hyeongseok_kimm/"
+            >
+              <img src={Logo} alt="instagram" />
             </a>
           </li>
         </ul>
