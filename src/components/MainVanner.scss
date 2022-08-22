@@ -164,20 +164,21 @@ $mobile: 1000px;
     .base {
       position: absolute;
       transform: translateY(-50%);
-      height: 110%;
+      height: 1200px;
       top: 46%;
-      left: -40px;
+      left: -60px;
       @media (max-width: $XL) {
-        height: 80%;
+        height: 780px;
+        left: -20px;
       }
       @media (max-width: $L) {
-        height: 64%;
-        left: -30px;
+        height: 680px;
+        left: -45px;
       }
       @media (max-width: $M) {
-        height: 52.6%;
+        height: 600px;
         top: 45%;
-        left: -32px;
+        left: -60px;
       }
       @media (max-width: $mobile) {
         height: 240vw;
@@ -191,21 +192,22 @@ $mobile: 1000px;
     .logo {
       position: absolute;
       transform: translateY(-50%);
-      height: 76%;
+      height: 780px;
       left: 36px;
       top: 60.8%;
       @media (max-width: $XL) {
-        height: 56%;
-        top: 57%;
+        height: 580px;
+        top: 58%;
         left: 0px;
       }
       @media (max-width: $L) {
-        height: 45.4%;
-        top: 54%;
+        height: 460px;
+        top: 55%;
       }
       @media (max-width: $M) {
-        height: 37.6%;
+        height: 360px;
         top: 52%;
+        left: 0px;
       }
       @media (max-width: $mobile) {
         display: none;
@@ -214,20 +216,21 @@ $mobile: 1000px;
     .arm {
       position: absolute;
       transform: translateY(-50%);
-      height: 40%;
-      left: 246px;
-      top: 44%;
+      height: 440px;
+      left: 232px;
+      top: 43.5%;
       @media (max-width: $XL) {
-        height: 28.4%;
-        left: 174px;
+        height: 284px;
+        left: 170px;
       }
       @media (max-width: $L) {
-        height: 22.8%;
-        left: 138px;
+        height: 250px;
+        left: 116px;
       }
       @media (max-width: $M) {
-        height: 19%;
-        left: 106px;
+        height: 220px;
+        left: 86px;
+        top: 43%;
       }
       @media (max-width: $mobile) {
         display: none;
