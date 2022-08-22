@@ -4,6 +4,9 @@ $M: 1200px;
 $mobile: 1000px;
 
 .content {
+  * {
+    transition: all 0.3s ease-out;
+  }
   .content-left {
     position: absolute;
     top: 54%;
@@ -93,7 +96,6 @@ $mobile: 1000px;
       text-decoration: none;
       padding: 0.2rem 1rem 0.5rem 1rem;
       animation: 1s fadeIn 1.8s backwards;
-      transition: all 0.3s ease-out;
       &:hover {
         background-color: #ffd700;
         color: #333;

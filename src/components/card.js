@@ -1,11 +1,10 @@
-import { useState, React, useEffect, useLayoutEffect, useRef } from 'react'
-import { Canvas, extend, useThree } from '@react-three/fiber'
+import { useState, React, useEffect } from 'react'
+import { Canvas } from '@react-three/fiber'
 import './Card.scss'
-import { Suspense, Spinner } from 'react'
-import * as THREE from 'three'
+import { Suspense } from 'react'
 import logo from '../assets/images/logo.png'
 import nameCard from '../assets/models/nameCard.glb'
-import { useGLTF, SpotLight, PresentationControls } from '@react-three/drei'
+import { useGLTF, PresentationControls } from '@react-three/drei'
 
 function Model(props) {
   const { scene, nodes, materials } = useGLTF(nameCard)
