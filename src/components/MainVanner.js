@@ -7,7 +7,9 @@ import AnimatedLetters from './AnimatedLetters'
 import Main_base from '../assets/images/main_base.png'
 import Main_arm from '../assets/images/main_arm.png'
 import Main_logo from '../assets/images/main_logo.svg'
-import Main_frame from '../assets/images/main_frame.png'
+import Github from '../assets/images/1.svg'
+import Behance from '../assets/images/3.svg'
+import Instagram from '../assets/images/2.svg'
 import Logo from '../assets/images/logo.png'
 const MainVanner = () => {
   const [count, setCount] = useState(0)
@@ -96,7 +98,7 @@ const MainVanner = () => {
               rel="noreferrer"
               href="https://github.com/NeoSelf1"
             >
-              <img src={Logo} alt="github" />
+              <img src={Github} alt="github" />
             </a>
           </li>
           <li>
@@ -105,7 +107,7 @@ const MainVanner = () => {
               rel="noreferrer"
               href="https://www.behance.net/729bdc53"
             >
-              <img src={Logo} alt="behance" />
+              <img src={Behance} alt="behance" />
             </a>
           </li>
           <li>
@@ -114,7 +116,7 @@ const MainVanner = () => {
               rel="noreferrer"
               href="https://www.instagram.com/hyeongseok_kimm/"
             >
-              <img src={Logo} alt="instagram" />
+              <img src={Instagram} alt="instagram" />
             </a>
           </li>
         </ul>
