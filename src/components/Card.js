@@ -36,9 +36,17 @@ const Card = () => {
   return (
     <div className="container" onMouseMove={handleMouseMove}>
       <div className="title">
-        <h1>
-          Let me introduce <img src={logo} alt="logo"></img>eoSelf
-        </h1>
+        {size.width > 1000 ? (
+          <h1>
+            Let
+            <br />
+            Me <br />
+            Introduce
+            <br /> <img src={logo} alt="logo"></img>&nbsp;&nbsp; eoSelf
+          </h1>
+        ) : (
+          <h1>Let me introduce Neoself</h1>
+        )}
       </div>
       <div className="card">
         <Suspense fallback={null}>

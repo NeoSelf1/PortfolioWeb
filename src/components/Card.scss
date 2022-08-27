@@ -6,13 +6,16 @@ $mobile: 1000px;
   animation: 1s fadeIn 1.5s backwards;
   display: flex;
   flex-direction: row;
+  width: 100vw;
+  justify-content: flex-end;
+  @media (max-width: 1000px) {
+    justify-content: start;
+  }
+
   .title {
     position: absolute;
-    top: 14%;
     left: 4.3vw;
-    @media (max-width: 1550px) {
-      top: 10%;
-    }
+    height: 90vh;
     @media (max-width: 1000px) {
       position: absolute;
       left: 50%;
@@ -23,36 +26,43 @@ $mobile: 1000px;
     }
     h1 {
       font-family: 'EB';
-      color: #0a402c;
-      font-size: 3rem;
-      @media (max-width: 1550px) {
-        font-size: 2.6rem;
+      color: #fff;
+      margin-top: 4rem;
+      font-size: 10rem;
+      line-height: 11.5rem;
+      text-shadow: -0.5px 0 #747474, 0 1px #747474, 0.5px 0 #747474,
+        0 -0.5px #747474;
+      @media (max-width: 1200px) {
+        line-height: 12rem;
+        font-size: 9rem;
       }
       @media (max-width: 1000px) {
+        font-family: 'H';
         font-size: 1.8rem;
+        margin-top: -4rem;
+        color: #0b402c;
+        text-shadow: none;
       }
       img {
-        width: 60px;
+        width: 170px;
         height: auto;
-        transform: translateY(+18%);
-        @media (max-width: 1000px) {
-          width: 30px;
+        position: absolute;
+        transform: translateY(+4%) translateX(-18%);
+        @media (max-width: 1200px) {
+          width: 150px;
+          transform: translateY(+10%) translateX(-18%);
         }
       }
     }
   }
   .card {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
     height: 80vh;
     width: 60vw;
     margin-top: 4rem;
-    @media (max-width: 1750px) {
-      margin-top: 6rem;
-      width: 55vw;
-    }
-    @media (max-width: 1550px) {
-      margin-top: 8rem;
-      width: 50vw;
-    }
     @media (max-width: 1000px) {
       display: none;
     }
@@ -63,36 +73,38 @@ $mobile: 1000px;
     display: flex;
     flex-direction: column;
     width: 20vw;
-    margin-top: 12vh;
-    margin-left: 10vw;
+    margin-top: 9vh;
+    margin-right: 6vw;
     justify-content: space-between;
+    @media (max-width: 1200px) {
+      margin-right: 12vw;
+    }
     @media (max-width: 1000px) {
       width: 84vw;
       margin-left: 8vw;
     }
     .mgS {
-      margin: 0 0 0 1rem;
+      margin: 0 0 0 0.8rem;
     }
     .area {
-      width: 100%;
-      @media (max-width: 1750px) {
-        width: 120%;
-      }
-      @media (max-width: 1550px) {
-        width: 150%;
-      }
-      @media (max-width: 1000px) {
+      width: 90%;
+      @media (max-width: 1400px) {
         width: 100%;
         margin-bottom: 6vh;
       }
+      @media (max-width: 1200px) {
+        width: 120%;
+      }
+      @media (max-width: 1000px) {
+        width: 100%;
+      }
       .line {
         border: 0.5px solid #747474;
-        margin: -0.2rem 0 0rem 0;
+        margin: -0.4rem 0 0rem 0;
       }
       h1 {
-        font-family: 'SB';
-        font-size: 1.4rem;
-
+        font-family: 'EB';
+        font-size: 1.2rem;
         @media (max-width: 1000px) {
           font-family: 'H';
           margin-left: 0.4rem;
@@ -100,14 +112,12 @@ $mobile: 1000px;
       }
       .present {
         position: absolute;
-        margin: 1.4rem 0 0 -1rem;
-        font-size: 0.9rem;
+        margin: 1.15rem 0 0 -0.8rem;
+        font-size: 0.6rem;
         font-family: 'EB';
-        @media (max-width: 1720px) {
-          font-size: 0.7rem;
-        }
-        @media (max-width: 1560px) {
-          margin: 1.6rem 0 0 -1rem;
+        @media (max-width: 1200px) {
+          margin: 1.03rem 0 0 -0.7rem;
+          // font-size: 0.8rem;
         }
         @media (max-width: 1000px) {
           margin: 1.35rem 0 0 -1rem;
@@ -116,15 +126,13 @@ $mobile: 1000px;
       }
       .majors {
         position: absolute;
-        margin: -1.9rem 0 0 0.1rem;
+        margin: -1.7rem 0 0 0.2rem;
         font-family: 'UL';
-        font-size: 0.9rem;
+        font-size: 0.7rem;
         color: #747474;
-        @media (max-width: 1720px) {
-          margin: -1.7rem 0 0 0.1rem;
-        }
-        @media (max-width: 1550px) {
-          margin: -1.9rem 0 0 0.1rem;
+        @media (max-width: 1500px) {
+          margin: -1.5rem 0 0 0.2rem;
+          font-size: 0.6rem;
         }
         @media (max-width: 1000px) {
           margin: -2.05rem 0 0 0.1rem;
@@ -136,15 +144,16 @@ $mobile: 1000px;
       display: flex;
       flex-direction: row;
       .subTitle h2 {
-        //*********************************
-        width: 10vw;
+        //********************************
+        width: 9vw;
         font-family: 'SB';
-        font-size: 1.2rem;
-        line-height: 2.4rem;
+        font-size: 1.1rem;
+        line-height: 1.5rem; //********************************
         margin-left: 0.3rem;
         @media (max-width: 1550px) {
-          font-size: 1.3rem;
-          line-height: 2.4rem;
+          font-size: 1rem;
+          line-height: 1.4rem;
+          // width: 40vw;
         }
         @media (max-width: 1000px) {
           font-size: 1.3rem;
@@ -155,19 +164,12 @@ $mobile: 1000px;
       .School {
         //*********************************
         font-family: 'UL';
-        font-size: 1.2rem;
-        line-height: 1.9rem;
-        width: 80vw;
+        font-size: 1rem;
+        line-height: 1.6rem; //********************************
+        width: 70vw;
         @media (max-width: 1550px) {
-          font-size: 1.2rem;
-        }
-        @media (max-width: 1270px) {
-          font-size: 1.1rem;
-          line-height: 2.1rem;
-        }
-        @media (max-width: 1180px) {
-          font-size: 1rem;
-          line-height: 2.25rem;
+          font-size: 0.9rem;
+          line-height: 1.5rem;
         }
         @media (max-width: 1000px) {
           font-size: 1.1rem;
@@ -183,18 +185,18 @@ $mobile: 1000px;
       }
       .subText {
         margin-top: 0.5rem;
-        width: 100%;
+        width: 130%;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         h3 {
           //*********************************
           font-family: 'UL';
-          font-size: 1.2rem;
-          line-height: 1rem;
+          font-size: 1.1rem;
+          line-height: 0.2rem; //********************************
           @media (max-width: 1550px) {
-            font-size: 1.2rem;
-            line-height: 1.08rem;
+            font-family: 'UL';
+            font-size: 1rem;
           }
           @media (max-width: 1000px) {
             font-family: 'UL';
@@ -202,9 +204,10 @@ $mobile: 1000px;
             line-height: 0.52rem;
           }
           b {
-            font-size: 0.8rem;
+            font-size: 0.5em;
           }
           a {
+            line-height: 0.6rem;
             @media (max-width: 1000px) {
               line-height: 1.15rem;
             }
