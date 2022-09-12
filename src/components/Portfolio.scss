@@ -36,12 +36,13 @@
       color: #0b402c;
 
       &.fill {
-        columns: rgba(0, 0, 0, 0.8);
+        columns: rgba(0, 0, 0, 0.6);
       }
       &.outline {
         z-index: 2;
+        pointer-events: none;
         mix-blend-mode: overlay;
-        color: rgba(255, 255, 255, 0.2);
+        color: rgba(255, 255, 255, 0.4);
       }
     }
   }
