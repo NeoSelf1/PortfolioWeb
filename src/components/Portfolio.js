@@ -10,7 +10,7 @@ export default function Portfolio() {
   var columns
   const [port, setPort] = useState(false)
 
-  if (port == false) {
+  if (port === false) {
     columns = [
       1, 4, 4, 4 /*동외고입학*/, 6, 9, 10, 14 /*GCDP*/, 16, 19 /*한핀*/,
       21 /*인턴직수행*/, 23, 24, 27 /*UI*/, 29 /*웹페이지 */, 35, 38, 41, 44,
@@ -50,7 +50,7 @@ export default function Portfolio() {
           {/* <button onClick={setPort(!port)}></button> */}
           <div
             className="gallery"
-            style={{ width: port == false ? '6800px' : '5600px' }}
+            style={{ width: port === false ? '6800px' : '5600px' }}
           >
             {images}
             <div className="gallery-helper">Scroll to discover more > </div>
