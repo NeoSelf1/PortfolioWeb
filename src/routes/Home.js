@@ -4,8 +4,8 @@ import Loader from '../components/Loader.js'
 const Home = () => {
   return (
     <>
-      <Loader />
       <MainVanner />
+      <Loader />
     </>
   )
 }

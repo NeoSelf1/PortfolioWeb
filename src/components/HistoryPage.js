@@ -1,8 +1,6 @@
 import React from 'react'
 import './HistoryPage.scss'
 import plus from '../assets/images/plus.png'
-import edu from '../assets/images/edu.png'
-import trophie from '../assets/images/trophie.png'
 const HistoryPage = ({
   year,
   month,
@@ -13,7 +11,6 @@ const HistoryPage = ({
   img,
   link,
 }) => {
-  console.log(categ)
   return (
     <div className={`content_${side}`}>
       <div className="line"></div>

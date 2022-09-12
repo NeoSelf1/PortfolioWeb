@@ -37,6 +37,7 @@ const MainVanner = () => {
                   ['저', '는', ' ', 'U', 'X', '/', 'U', 'I',' ', '디', '자','이','너', '입', '니', '다'],
   ]
   const helloText = ['안', '녕', '하', '세', '요']
+  console.log(size.width)
   useInterval(() => {
     setCount(count + 1)
   }, 4500)
