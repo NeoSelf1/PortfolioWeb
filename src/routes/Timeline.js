@@ -23,21 +23,24 @@ const Timeline = () => {
   return (
     <>
       <Loader />
-      {size.width > 1000 ? (
+      {size.width > 800 ? (
         <Portfolio />
       ) : (
         <h1
           style={{
             position: 'absolute',
-            top: '50%',
+            height: '100%',
             width: '100%',
             fontSize: '2rem',
+            lineHeight: '50vh',
             textAlign: 'center',
-            transform: 'translateY(-50%)',
-            fontFamily: 'EB',
+            // transform: 'translateY(-50%)',
+            fontFamily: 'M',
+            backgroundColor: '#0b402c',
+            color: '#ffffff',
           }}
         >
-          이 페이지는 PC에서만 접속이 가능합니다.
+          이 페이지는 큰 화면에서만 보실 수 있어요!
         </h1>
       )}
     </>
