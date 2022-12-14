@@ -1,86 +1,68 @@
 import React, { useEffect, useState } from 'react'
 import './MenuBar.scss'
-import Logo from '../assets/images/logo.png'
-import { Link, NavLink, Outlet } from 'react-router-dom'
-import { BiMenuAltRight } from 'react-icons/bi'
-import { AiOutlineClose } from 'react-icons/ai'
+import frame from '../assets/images/menuFrame.jpg'
+import { NavLink, Outlet } from 'react-router-dom'
 
 const MenuBar = () => {
-  const [menuOpen, setMenuOpen] = useState(false)
-  const [size, setSize] = useState({
-    width: window.innerWidth,
-    height: undefined,
-  })
-
-  console.log(menuOpen)
-  useEffect(() => {
-    const handleResize = () => {
-      setSize({
-        width: window.innerWidth,
-        height: window.innerHeight,
-      })
-    }
-    window.addEventListener('resize', handleResize)
-
-    return () => window.removeEventListener('resize', handleResize)
-  }, [])
-
-  useEffect(() => {
-    if (size.width > 767 && menuOpen) {
-      setMenuOpen(false)
-    }
-  }, [size.width, menuOpen])
-
-  const menuToggleHandler = () => {
-    setMenuOpen((p) => !p)
-  }
   return (
-    <>
+    <div className="menu_base">
       <div className="nav-bar">
-        <Link to="/">
-          <img src={Logo} alt="logo" />
-        </Link>
-        <nav
-          className={`${'nav'} ${menuOpen && size.width < 768 ? 'isMenu' : ''}`}
-        >
+        {/* <img className="frame" src={frame} alt="frame" /> */}
+        <h2 className="text_1">First Scene</h2>
+        <nav className="menu_top">
           <NavLink
             exact="true"
-            activeclassname="activeHome"
+            className={({ isActive }) => (isActive ? 'active' : 'a')}
             to="/"
-            onClick={menuToggleHandler}
           >
             Home
           </NavLink>
+          <div className="line"></div>
           <NavLink
             exact="true"
-            activeclassname="activeAbout"
-            to="/about"
-            onClick={menuToggleHandler}
+            className={({ isActive }) => (isActive ? 'active' : 'a')}
+            to="/portfolio"
           >
-            About
-          </NavLink>
-          <NavLink
-            exact="true"
-            activeclassname="activeTimeline"
-            to="/timeline"
-            onClick={menuToggleHandler}
-          >
-            Timeline
+            Portfolio
           </NavLink>
         </nav>
-        <div className="toggle">
-          {!menuOpen ? (
-            <BiMenuAltRight onClick={menuToggleHandler} />
-          ) : (
-            <AiOutlineClose
-              style={{ color: '#fff' }}
-              onClick={menuToggleHandler}
-            />
-          )}
-        </div>
+        <h2 className="text_2">Brand</h2>
+        <nav className="menu_bot">
+          <NavLink
+            exact="true"
+            className={({ isActive }) => (isActive ? 'active' : 'a')}
+            to="/logo"
+          >
+            5 Rings
+          </NavLink>
+          <div className="line"></div>
+          <NavLink
+            exact="true"
+            className={({ isActive }) => (isActive ? 'active' : 'a')}
+            to="/colours"
+          >
+            Colours
+          </NavLink>
+          <div className="line"></div>
+          <NavLink
+            exact="true"
+            className={({ isActive }) => (isActive ? 'active' : 'a')}
+            to="/typography"
+          >
+            Typography
+          </NavLink>
+          <div className="line"></div>
+          <NavLink
+            exact="true"
+            className={({ isActive }) => (isActive ? 'active' : 'a')}
+            to="/symbols"
+          >
+            Symbols
+          </NavLink>
+        </nav>
       </div>
       <Outlet />
-    </>
+    </div>
   )
 }
 

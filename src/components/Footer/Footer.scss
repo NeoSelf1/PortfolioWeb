@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  justify-content: flex-start;
+  padding: 71px 8vw 72px 8vw;
+  background-color: #2d2d2d;
+
+  h5 {
+    color: #f8f8f8;
+    font-size: 0.8rem;
+    width: 100%;
+    align-self: flex-end;
+    font-weight: 500;
+    font-family: Spoqa Han Sans Neo;
+    text-align: right;
+    margin: 0;
+  }
+  .footer {
+    &__left {
+      gap: 67px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+
+      h2 {
+        width: 10vw;
+        font-size: 1.3rem;
+        color: #f8f8f8;
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+      h4 {
+        color: #ababab;
+        font-size: 0.8rem;
+        margin: 0;
+        line-height: 1.4rem;
+      }
+      img {
+        width: 9rem;
+        margin: 0;
+      }
+      &__text {
+        display: flex;
+        flex-direction: row;
+        color: #f8f8f8;
+        &__title {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}

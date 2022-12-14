@@ -1,0 +1,15 @@
+.Typo2 {
+  min-width: 43.75rem;
+  height: 276px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 0 9vw 240px 9vw;
+  &__title {
+    h2 {
+      margin-top: 6px;
+    }
+    margin-bottom: 24px;
+  }
+}

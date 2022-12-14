@@ -1,0 +1,27 @@
+.logo3 {
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 80px 9vw 160px 9vw;
+  &__container {
+    gap: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-self: stretch;
+    align-items: flex-start;
+    img {
+      width: 29vw;
+      height: auto;
+    }
+    h2 {
+      color: #ababab;
+      font-size: 1.2rem;
+      font-weight: 500;
+      font-family: Spoqa Han Sans Neo;
+      white-space: nowrap;
+    }
+  }
+}

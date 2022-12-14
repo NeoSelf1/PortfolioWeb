@@ -1,0 +1,42 @@
+$imageWidth: 14vw;
+.team {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0 12vw 240px 9vw;
+  justify-content: space-between;
+
+  .teammate {
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: $imageWidth;
+    img {
+      width: $imageWidth;
+      height: auto;
+    }
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      h3 {
+        color: #2d2d2d;
+        font-size: 1.2rem;
+        font-weight: 700;
+        font-family: Spoqa Han Sans Neo;
+        width: 100%;
+      }
+      h2 {
+        width: 100%;
+        color: #ababab;
+        margin: 0.1rem 0 0 0;
+        font-size: 0.8rem;
+        font-family: Spoqa Han Sans Neo;
+        font-weight: normal;
+      }
+    }
+  }
+}

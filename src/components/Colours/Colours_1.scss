@@ -1,0 +1,22 @@
+.colours1 {
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 160px 9vw 80px 9vw;
+  &__title {
+    color: #2c2d2d;
+    font-size: 28px;
+    font-family: Nexen_B;
+    white-space: nowrap;
+    letter-spacing: 0.84px;
+  }
+  b {
+    display: contents;
+    color: #ababab;
+    font-size: 0.8rem;
+    font-weight: 700;
+    font-family: Spoqa Han Sans Neo;
+  }
+}

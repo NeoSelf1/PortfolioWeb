@@ -3,29 +3,41 @@ $primary-color: #0a402c;
 @import 'animate.css';
 @import '~loaders.css/src/animations/pacman.scss';
 
-@font-face {
-  font-family: 'UL';
-  src: url('./assets/fonts/AppleSDGothicNeoUL.ttf');
-}
-
-@font-face {
-  font-family: 'M';
-  src: url('./assets/fonts/AppleSDGothicNeoM.ttf');
-}
-
-@font-face {
-  font-family: 'H';
-  src: url('./assets/fonts/AppleSDGothicNeoH.ttf');
-}
-
-@font-face {
-  font-family: 'SB';
-  src: url('./assets/fonts/AppleSDGothicNeoSB.ttf');
-}
-@font-face {
-  font-family: 'EB';
-  src: url('./assets/fonts/AppleSDGothicNeoEB.ttf');
-}
 // * {
 //   border: 1px solid red;
 // }
+h3 {
+  // width: 719px;
+  align-self: stretch;
+  font-family: 'Spoqa Han Sans Neo';
+  color: #2d2d2d;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+}
+h2 {
+  margin: 0;
+  color: #ababab;
+  font-size: 1.2rem;
+  font-family: 'Spoqa Han Sans Neo';
+  font-weight: 400;
+}
+h1 {
+  font-size: 1.6rem;
+  font-family: Nexen_B;
+  white-space: nowrap;
+  letter-spacing: 0.84px;
+  margin: 0;
+}
+h4 {
+  // white-space: nowrap;
+  margin: 0;
+  color: #2d2d2d;
+  font-family: 'Spoqa Han Sans Neo';
+  font-weight: 400;
+  font-size: 1rem;
+  font-family: Spoqa Han Sans Neo;
+}
+a {
+  color: #747478;
+}

@@ -1,0 +1,21 @@
+.about {
+  // gap: 173px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 160px 4.6vw 0px 9vw;
+  &__text {
+    width: 32vw;
+    gap: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  img {
+    width: 24vw;
+    height: auto;
+  }
+}

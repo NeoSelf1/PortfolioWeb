@@ -1,0 +1,48 @@
+.profile {
+  padding: 240px 4.6vw 240px 9vw;
+  gap: 17vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  @media (max-width: 1600px) {
+    gap: 11vw;
+  }
+
+  &__title {
+    gap: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  &__detail {
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    &__sub {
+      color: #2d2d2d;
+      font-weight: 400;
+      font-size: 1rem;
+      font-family: Spoqa Han Sans Neo;
+      white-space: nowrap;
+    }
+    h4 {
+      width: 8vw;
+    }
+    &__1 {
+      display: flex;
+    }
+    h3 {
+      font-weight: 600;
+    }
+    b {
+      display: contents;
+      color: #2d2d2d;
+      font-size: 0.8rem;
+      font-weight: 800;
+    }
+  }
+}

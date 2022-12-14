@@ -1,0 +1,70 @@
+.colours0 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #2c2d2d;
+  padding: 80px 6vw;
+  &__box1 {
+    width: 17vw;
+    height: 17vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 32px;
+    h1 {
+      color: #ffffff;
+      font-size: 1.2rem;
+      font-family: Nexen_R;
+      white-space: nowrap;
+      letter-spacing: 1px;
+      @media (max-width: 1600px) {
+        font-size: 1rem;
+      }
+    }
+    &__detail {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-self: stretch;
+      align-items: flex-end;
+      &__left {
+        gap: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        h2 {
+          color: #e2e2e1;
+          font-size: 1.2rem;
+          font-weight: 700;
+          font-family: Spoqa Han Sans Neo;
+          white-space: nowrap;
+          @media (max-width: 1600px) {
+            font-size: 1rem;
+          }
+        }
+        h3 {
+          color: #f8f8f8;
+          font-size: 1rem;
+          font-weight: 500;
+          font-family: Spoqa Han Sans Neo;
+          white-space: nowrap;
+          @media (max-width: 1600px) {
+            font-size: 0.8rem;
+          }
+        }
+      }
+      &__right {
+        color: #f8f8f8;
+        font-size: 1rem;
+        font-weight: 500;
+        font-family: Spoqa Han Sans Neo;
+        white-space: nowrap;
+        @media (max-width: 1600px) {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.colours2 {
+  gap: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 80px 9vw 80px 9vw;
+  h2 {
+    font-size: 1.4rem;
+    color: #2c2d2d;
+    font-weight: 700;
+    font-family: Spoqa Han Sans Neo;
+    white-space: nowrap;
+  }
+  &__container {
+    gap: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-self: stretch;
+    align-items: flex-start;
+
+    &__item {
+      gap: 8px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      &__square {
+        width: 14vw;
+        height: 14vw;
+        align-self: stretch;
+      }
+      h3 {
+        color: #2d2d2d;
+        font-family: Spoqa Han Sans Neo;
+        font-weight: 400;
+        white-space: nowrap;
+      }
+    }
+  }
+}

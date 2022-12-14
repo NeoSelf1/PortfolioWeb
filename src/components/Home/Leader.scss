@@ -1,0 +1,93 @@
+.leader {
+  gap: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 240px 4.6vw 240px 9vw;
+  &__title {
+    // gap: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    h2 {
+      color: #ababab;
+      font-size: 1.2rem;
+      font-family: 'Spoqa Han Sans Neo';
+      font-weight: 400;
+      white-space: nowrap;
+      margin-top: 0.2rem;
+    }
+  }
+  &__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    img {
+      width: 29vw;
+      margin-right: 1.7vw;
+    }
+    &__text {
+      gap: 32px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      &__duty {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        h2 {
+          // align-self: stretch;
+          color: #2d2d2d;
+          font-size: 1.2rem;
+          font-weight: 700;
+          font-family: Spoqa Han Sans Neo;
+          white-space: nowrap;
+
+          @media (max-width: 1600px) {
+            font-size: 1rem;
+          }
+        }
+        h3 {
+          margin-top: 6px;
+          color: #ababab;
+          font-size: 1.2rem;
+          font-weight: 400;
+          font-family: Spoqa Han Sans Neo;
+          white-space: nowrap;
+          @media (max-width: 1600px) {
+            font-size: 1rem;
+          }
+        }
+      }
+
+      &__detail {
+        gap: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        h2 {
+          margin-left: 1rem;
+          width: 6vw;
+        }
+        h4 {
+          width: 16vw;
+          color: #2d2d2d;
+          font-size: 1.2rem;
+          font-weight: 300;
+          font-family: Spoqa Han Sans Neo;
+          letter-spacing: -0.22px;
+        }
+        &_1 {
+          display: flex;
+          flex-direction: row;
+        }
+      }
+    }
+  }
+}
