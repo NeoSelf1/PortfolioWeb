@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/brandcapstone/static/css/main.7c93ebad.css",
-    "main.js": "/brandcapstone/static/js/main.4574a16b.js",
-    "static/media/background.mp4": "/brandcapstone/static/media/background.68e77781d4c709f650ed.mp4",
-    "static/media/mockup1.jpg": "/brandcapstone/static/media/mockup1.3e9f4143f5d7bc39f755.jpg",
-    "static/media/mockup2.jpg": "/brandcapstone/static/media/mockup2.90b1d34ecfa9633e6df8.jpg",
-    "static/media/typoback.mp4": "/brandcapstone/static/media/typoback.6d448eac81cd9734a63b.mp4",
-    "static/media/symbolheader.mp4": "/brandcapstone/static/media/symbolheader.6cfcbf1662cf10a4fbed.mp4",
-    "static/media/typo.jpg": "/brandcapstone/static/media/typo.951361ce5eb9b6a7b7ca.jpg",
-    "static/media/app1.jpg": "/brandcapstone/static/media/app1.a75bef61a598f72c4397.jpg",
-    "static/media/app3.jpg": "/brandcapstone/static/media/app3.74d7b054504bfff7aec8.jpg",
-    "static/media/subtypo.jpg": "/brandcapstone/static/media/subtypo.58de1c7d432e5d4351d7.jpg",
-    "static/media/app2.jpg": "/brandcapstone/static/media/app2.cd49571c3b78e7e6a4ea.jpg",
-    "static/media/logoWhite.jpg": "/brandcapstone/static/media/logoWhite.f47e1a3a86c616854ec9.jpg",
-    "static/media/logoBlack.jpg": "/brandcapstone/static/media/logoBlack.c1f9de0355eb53be3ab9.jpg",
-    "static/media/menuFrame.jpg": "/brandcapstone/static/media/menuFrame.b92185540a457c1affce.jpg",
-    "static/media/gridline.png": "/brandcapstone/static/media/gridline.b0c6903dd931a86196bc.png",
-    "static/media/sym3.png": "/brandcapstone/static/media/sym3.dce8c87aa88a6bee3457.png",
-    "static/media/logo.png": "/brandcapstone/static/media/logo.ed2a92eb97aef3ee8236.png",
-    "static/media/sym1.png": "/brandcapstone/static/media/sym1.ed1ffb478d00f5a0adf9.png",
-    "index.html": "/brandcapstone/index.html",
-    "main.7c93ebad.css.map": "/brandcapstone/static/css/main.7c93ebad.css.map",
-    "main.4574a16b.js.map": "/brandcapstone/static/js/main.4574a16b.js.map"
+    "main.css": "/BrandCapstone/static/css/main.7c93ebad.css",
+    "main.js": "/BrandCapstone/static/js/main.d1830fc6.js",
+    "static/media/background.mp4": "/BrandCapstone/static/media/background.68e77781d4c709f650ed.mp4",
+    "static/media/mockup1.jpg": "/BrandCapstone/static/media/mockup1.3e9f4143f5d7bc39f755.jpg",
+    "static/media/mockup2.jpg": "/BrandCapstone/static/media/mockup2.90b1d34ecfa9633e6df8.jpg",
+    "static/media/typoback.mp4": "/BrandCapstone/static/media/typoback.6d448eac81cd9734a63b.mp4",
+    "static/media/symbolheader.mp4": "/BrandCapstone/static/media/symbolheader.6cfcbf1662cf10a4fbed.mp4",
+    "static/media/typo.jpg": "/BrandCapstone/static/media/typo.951361ce5eb9b6a7b7ca.jpg",
+    "static/media/app1.jpg": "/BrandCapstone/static/media/app1.a75bef61a598f72c4397.jpg",
+    "static/media/app3.jpg": "/BrandCapstone/static/media/app3.74d7b054504bfff7aec8.jpg",
+    "static/media/subtypo.jpg": "/BrandCapstone/static/media/subtypo.58de1c7d432e5d4351d7.jpg",
+    "static/media/app2.jpg": "/BrandCapstone/static/media/app2.cd49571c3b78e7e6a4ea.jpg",
+    "static/media/logoWhite.jpg": "/BrandCapstone/static/media/logoWhite.f47e1a3a86c616854ec9.jpg",
+    "static/media/logoBlack.jpg": "/BrandCapstone/static/media/logoBlack.c1f9de0355eb53be3ab9.jpg",
+    "static/media/menuFrame.jpg": "/BrandCapstone/static/media/menuFrame.b92185540a457c1affce.jpg",
+    "static/media/gridline.png": "/BrandCapstone/static/media/gridline.b0c6903dd931a86196bc.png",
+    "static/media/sym3.png": "/BrandCapstone/static/media/sym3.dce8c87aa88a6bee3457.png",
+    "static/media/logo.png": "/BrandCapstone/static/media/logo.ed2a92eb97aef3ee8236.png",
+    "static/media/sym1.png": "/BrandCapstone/static/media/sym1.ed1ffb478d00f5a0adf9.png",
+    "index.html": "/BrandCapstone/index.html",
+    "main.7c93ebad.css.map": "/BrandCapstone/static/css/main.7c93ebad.css.map",
+    "main.d1830fc6.js.map": "/BrandCapstone/static/js/main.d1830fc6.js.map"
   },
   "entrypoints": [
     "static/css/main.7c93ebad.css",
-    "static/js/main.4574a16b.js"
+    "static/js/main.d1830fc6.js"
   ]
 }
