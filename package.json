@@ -1,5 +1,5 @@
 {
-  "homepage": "http://neoself1.github.io/brandcapstone",
+  "homepage": "http://NeoSelf1.github.io/BrandCapstone",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
@@ -29,7 +29,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build", 
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
