@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 // import History from '../components/History'
 import Portfolio from '../components/Portfolio'
+import History from '../components/History'
 import Loader from '../components/Loader'
 import { Center } from '@react-three/drei'
 const Timeline = () => {
@@ -24,7 +25,7 @@ const Timeline = () => {
     <>
       <Loader />
       {size.width > 800 ? (
-        <Portfolio />
+        <History />
       ) : (
         <h1
           style={{
