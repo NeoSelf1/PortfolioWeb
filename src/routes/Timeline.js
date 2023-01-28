@@ -25,7 +25,7 @@ const Timeline = () => {
     <>
       <Loader />
       {size.width > 800 ? (
-        <History />
+        <Portfolio />
       ) : (
         <h1
           style={{
