@@ -129,13 +129,11 @@ const Card = () => {
             <div className="subTitle">
               <h2>취미</h2>
               <h2>좋아하는 것</h2>
-              <h2>단점</h2>
               <h2>MBTI</h2>
             </div>
             <div className="subText">
               <h3>피아노 연주</h3>
               <h3>비빔면, 콜라</h3>
-              <h3>타인 공감능력</h3>
               <div>
                 <h3>
                   ENTJ <b>가 되고 싶은 INTJ</b>{' '}
